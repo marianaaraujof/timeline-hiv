@@ -190,7 +190,7 @@ Main Components
   pointer-events: none;
   bottom: -35px;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: normal;
   padding-bottom: 15px;
   color: #fff;
@@ -379,16 +379,16 @@ Main Components
 }
 @media only screen and (min-width: 768px) {
   .jtline .events-content h2 {
-    font-size: 2.4rem;
+    font-size: 1.25em;
   }
   .jtline .events-content em {
-    font-size: 2rem;
+    font-size: 2em;
   }
   .jtline .events-content p {
-    font-size: 1.8rem;
+    font-size: 1.25em;
   }
 }
-@media  screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .jtline .timeline {
     position: relative;
     height: 140px;
@@ -396,7 +396,6 @@ Main Components
     max-width: 760px;
     padding-bottom: 0px;
   }
-
   .jtline .events-content {
     width: 760px;
     position: relative;
@@ -405,9 +404,30 @@ Main Components
     align-items: flex-start;
     margin-bottom: 3em;
   }
-  .header h1 {
-    text-align: center;
+  .jtline .events-content h2 {
+    font-size: 1em;
   }
+  .jtline .events-content p {
+    font-size: 1em;
+  }
+  .jtline .events a.selected {
+    font-size: 1.25em;
+    bottom: -15px;
+  }
+  .jtline .events a{
+    font-size: 1em;
+  }
+  .jtline .events-content li.selected {
+    max-width: 80%;
+    height: auto;
+  }
+  .jtline .events-content p {
+    height: fit-content;
+  }
+  .header h1 {
+    justify-content: flex-start;
+  }
+
 
 }
 
