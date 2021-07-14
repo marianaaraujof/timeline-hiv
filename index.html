@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LINHA DO TEMPO 2</title>
+
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/stylelais.css" /> -->
+    
+
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/jtline.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var contentText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+            // dataRoot : '/'
+            var myMappedObject = [
+                {
+                    "isSelected": "true",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": " 1977-78 ",
+                    "assignDate": "01/01/1978",
+                    "taskShortDate": "1977-78",
+                    "taskDetails": "Primeiros casos de aids nos EUA, Haiti e África."
+
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no Brasil",
+                    "taskSubTitle": "1982",
+                    "assignDate": "01/01/1982",
+                    "taskShortDate": "1982",
+                    "taskDetails": "Primeiro caso de HIV no Brasil."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no Brasil",
+                    "taskSubTitle": "1983",
+                    "assignDate": "01/01/1983",
+                    "taskShortDate": "1983",
+                    "taskDetails": "Primeiro caso de HIV em criança e em mulher no Brasil.<br>\n Descoberta do HIV .<br>"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo e Brasil",
+                    "taskSubTitle": "1985",
+                    "assignDate": "01/01/1985",
+                    "taskShortDate": "1985",
+                    "taskDetails": "&#8226;Surge o primeiro teste anti-HIV. <br> <br>\n  &#8226;É criado um programa nacional para enfrentamento do HIV."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no Brasil",
+                    "taskSubTitle": "1987",
+                    "assignDate": "01/01/1987",
+                    "taskShortDate": "1987",
+                    "taskDetails": "Brasil começa a usar AZT (zidovudina) .<br>\n Brasil registra 2775 casos.<br>\n"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no Brasil",
+                    "taskSubTitle": "1988",
+                    "assignDate": "01/01/1988",
+                    "taskShortDate": "1988",
+                    "taskDetails": "Criação do SUS. \n"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo e Brasil",
+                    "taskSubTitle": "1991",
+                    "assignDate": "01/01/1991",
+                    "taskShortDate": "1991",
+                    "taskDetails": "&#8226;No mundo, são 10 milhões de infectados (segundo OMS).<br><br>\n &#8226;Aquisição de ARV pelo Ministério da Saúde - acesso universal aos ARV. "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "1992",
+                    "assignDate": "01/01/1992",
+                    "taskShortDate": "1992",
+                    "taskDetails": "Didanosina (ddI) e Zalcitabine (ddC) são aprovadas para uso em combinação com AZT"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "1994",
+                    "assignDate": "01/01/1994",
+                    "taskShortDate": "1994",
+                    "taskDetails": "Estavudina (d4T) aprovada para uso."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "1995",
+                    "assignDate": "01/01/1995",
+                    "taskShortDate": "1995",
+                    "taskDetails": "Lamivudina (3TC) aprovada para uso saquinavir (SQV)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no mundo e Brasil",
+                    "taskSubTitle": "1996",
+                    "assignDate": "01/01/1996",
+                    "taskShortDate": "1996",
+                    "taskDetails": "&#8226; Nevirapina (NVP). <br> &#8226; Nova classe de ARV, os Inibidores da protease: Inadivir (IDV), Ritonavir (RTV).<br><br> &#8226; Lei 9313 garante o acesso universal ao tratamento da infecção pelo HIV como um direito – tendo sido o primeiro país em desenvolvimento a fazê-lo."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "1997",
+                    "assignDate": "101/01/1997",
+                    "taskShortDate": "1997",
+                    "taskDetails": "Nelfinavir (NFV)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no mundo",
+                    "taskSubTitle": "1998",
+                    "assignDate": "01/01/1998",
+                    "taskShortDate": "1998",
+                    "taskDetails": "Demonstração de eficácia da tripla terapia em reduzir morbimortalidade. <br> \n Lançamento Efavirenz (EFZ)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "2000",
+                    "assignDate": "01/01/2000",
+                    "taskShortDate": "2000",
+                    "taskDetails": "Lopinavir/ritonavir."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "2001",
+                    "assignDate": "01/01/2001",
+                    "taskShortDate": "2001",
+                    "taskDetails": "Tenofovir (TDF)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no mundo",
+                    "taskSubTitle": "2003",
+                    "assignDate": "01/01/2003",
+                    "taskShortDate": "2003",
+                    "taskDetails": "Atanazavir. <br> Fosamprenavir. <br> Enfuvirtide (t20)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo",
+                    "taskSubTitle": "2006",
+                    "assignDate": "01/01/2006",
+                    "taskShortDate": "2006",
+                    "taskDetails": "Darunavir (DVR)."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no mundo",
+                    "taskSubTitle": "2007",
+                    "assignDate": "01/01/2007",
+                    "taskShortDate": "2007",
+                    "taskDetails": "Raltegravir. <br> Maraviroc."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no mundo e Brasil",
+                    "taskSubTitle": "2008",
+                    "assignDate": "01/01/2008",
+                    "taskShortDate": "2008",
+                    "taskDetails": "&#8226;Etravirina. <br><br> &#8226;TARV para pessoas com CD4 < 200. TARV para <br> pessoas com CD4 entre 200 e 350 a depender da <br> tendência de queda da contagem de CD4 e/ou de <br> elevação da carga viral, da motivação do paciente <br> para iniciar o tratamento, sua capacidade <br> de adesão e a presença de comorbidades."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no Brasil",
+                    "taskSubTitle": "2010",
+                    "assignDate": "01/01/2010",
+                    "taskShortDate": "2010",
+                    "taskDetails": "TARV para pessoas com CD4< 350. <br> Início da Profilaxia Pós-Exposição (PEP) . "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Evento no Brasil",
+                    "taskSubTitle": "2016",
+                    "assignDate": "01/01/2015",
+                    "taskShortDate": "2016",
+                    "taskDetails": "Dolutegravir entra no esquema preferencial para pacientes virgens de tratamento. "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Eventos no Brasil",
+                    "taskSubTitle": "2018",
+                    "assignDate": "01/01/2018",
+                    "taskShortDate": "2018",
+                    "taskDetails": "Início da PreP (Profilaxia Pré-Exposição no Brasil). <br> Tratamento para todos com HIV – teste e trate."
+                }
+            ];
+
+            var jtLine = $('.myjtline').jTLine({
+                callType: 'jsonObject',
+                structureObj: myMappedObject,
+                map: {
+                    "dataRoot": "/",
+                    "title": "taskTitle",
+                    "subTitle": "taskSubTitle",
+                    "dateValue": "assignDate",
+                    "pointCnt": "taskShortDate",
+                    "bodyCnt": "taskDetails"
+                },
+                distanceMode: 'fixDistance', // 'fixDistance' 'auto' 'predefinedDistance'
+                eventsMinDistance: 100,       // Consider It as Distance Unit "by Pixel"
+                fixDistanceValue: 2,         // if eventsMinDistance = 60 & fixDistanceValue= 2 then the value is: (60*2) = 120 px
+                firstPointMargin: 1         // First Point Margin from the left
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    
+      <header class="header">
+        <div class="container">
+          <h1>Linha do Tempo:</h1>
+          <h1>HIV</h1>
+        </div>
+      </header>
+    
+    
+      <section id="conteudo" class="container">    
+           
+
+
+      <div class="myjtline">
+        
+        </div>
+    
+      </section>
+      <span class="line"></span>
+
+      <script src="js/dark-mode-switch.min.js"></script>
+
+
+    </div>
+    
+</body>
+
+</html>
