@@ -109,7 +109,7 @@ Main Components
   z-index: 1;
   left: 0;
   top: 70px;
-  height: 2px;
+  height: 5px;
   /* width will be set using JavaScript */
   background: #dfdfdf;
   -webkit-transition: -webkit-transform 0.4s;
@@ -122,7 +122,7 @@ Main Components
   z-index: 1;
   left: 0;
   top: 0;
-  height: 200%;
+  height: 100%;
   width: 100%;
   background-color: #005CA8;
   -webkit-transform: scaleX(0);
@@ -289,8 +289,8 @@ Main Components
 }
 
 .jtline .events-content {
-    width:800px;
-    margin:0 auto;
+  width:800px;
+  margin:0 auto;
   position: relative;
   
   overflow: hidden;
@@ -372,7 +372,7 @@ Main Components
   font-weight: normal;
   padding: 1.5rem 5rem;
   color: #707070;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .jtline .events-content em, .jtline .events-content p {
   line-height: 1.6;
@@ -387,6 +387,25 @@ Main Components
   .jtline .events-content p {
     font-size: 1.8rem;
   }
+}
+@media  screen and (max-width: 768px) {
+  .jtline .timeline {
+    position: relative;
+    height: 140px;
+    width: 100%;
+    max-width: 760px;
+    padding-bottom: 0px;
+  }
+
+  .jtline .events-content {
+    width: 760px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
 }
 
 @-webkit-keyframes cd-enter-right {
